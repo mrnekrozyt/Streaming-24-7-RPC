@@ -2,7 +2,10 @@
 Allows you to keep your account status as streaming. It also allows you to set a gif link as your image in your rpc and have 2 buttons. It is fully customizable!
 
 # REPLIT SETUP
-- Clone the repo by pasting **github.com/mrnekrozyt/Streaming-24-7-RPC/** and clone it
+- Open **https://replit.com/**
+- Then click Create Repl
+- Next click the button in the right named Import from github
+- Then clone the repo by pasting **github.com/mrnekrozyt/Streaming-24-7-RPC/** and click Import from Github
 - Click Secrets and type TOKEN
 - Go back to your discord and click CTRL + SHIFT + I
 - Click the 2 Arrow pointing on the right
