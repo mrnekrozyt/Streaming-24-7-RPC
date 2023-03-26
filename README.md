@@ -25,8 +25,11 @@ Allows you to keep your account status as streaming. It also allows you to set a
 - Then copy the **Client ID**
 - Then paste it on the index.js on the line 18
 
-DO NOT GIVE YOUR TOKEN TO OTHERS!
-Giving your token to someone else will give them the ability to log into your account without the password or 2FA.
+# DO NOT GIVE YOUR TOKEN TO OTHERS!
+**Giving your token to someone else will give them the ability to log into your account without the password or 2FA.**
+
+# DO NOT INVITE SOMEBODY TO YOUR REPL!
+**Inviting somebody to your repl literally means that your giving them full access to your repl including your secrets tab.**
 
 > ⭐ Feel free to Star the Repository if this helped you! ;)
 
