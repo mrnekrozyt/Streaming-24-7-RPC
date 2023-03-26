@@ -40,3 +40,28 @@ const r = new Discord.RichPresence()
 })
 
 client.login(process.env.TOKEN)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Copyright to mrnekrozyt 2021-2023
+// Support Server:https://discord.gg/pSJ5JkmH6N
+// Source Code: https://github.com/mrnekrozyt/Streaming-24-7-RPC/
