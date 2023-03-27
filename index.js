@@ -21,8 +21,8 @@ const r = new Discord.RichPresence()
     .setState('Your State')
     .setName('mrnekrozyt')
     .setDetails('Main Text')
-    .setStartTimestamp(Date.now())
-    /*.setParty({
+    .setStartTimestamp(Date.now()) // remove this if you dont want the timestamp (the time it started the rpc)
+    /*.setParty({         
         max: 9999,
         current: 6789,
         id: Discord.getUUID(),
