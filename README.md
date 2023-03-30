@@ -10,6 +10,6 @@ Allows you to keep your account status as streaming. It also allows you to set a
 **Inviting somebody to your repl literally means that your giving them full access to your repl including your secrets tab.**
 
 > ⭐ Feel free to Star the Repository if this helped you! ;)
->                                                                                >
+>                                                                                
 > Streaming-24-7-RPC by mrnekrozyt is licensed under Attribution 4.0 International
 
