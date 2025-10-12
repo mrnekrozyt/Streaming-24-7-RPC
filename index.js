@@ -23,12 +23,12 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence(client)
-    .setApplicationId('1140502397928620184')
+    .setApplicationId('1426964594215227456')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=BsaaQK94OPs') //Must be a youtube video link 
-    .setState('Playing Minecraft')
+    .setURL('https://youtu.be/rtaONidfhG4?si=msMXaAJFR1IO5lEX') //Must be a youtube video link 
+    .setState('Those Eyes')
     .setName('Dragon Slayer')
-    .setDetails(`DragonSlayer0SMP.aternos.me`)
+    .setDetails(`Captivates Me`)
     .setStartTimestamp(Date.now())
  .setAssetsLargeImage('https://media.discordapp.net/attachments/1057148615405076491/1144509258868736071/lofi-girl-lofi.gif?width=451&height=402') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('Jenna_YT') //Text when you hover the Large image
