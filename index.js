@@ -4,64 +4,53 @@ const client = new Discord.Client({
   checkUpdate: false
 });
 
-const keepAlive = require('./server.js')
-keepAlive()
+const keepAlive = require('./server.js');
+keepAlive();
+
+function formatTime() { //Credits to himika#0001 and never#0001
+  const date = new Date();
+  const options = {
+    timeZone: 'America/New_York', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    hour12: true,
+    hour: 'numeric',
+    minute: 'numeric'
+  };
+  return new Intl.DateTimeFormat('en-US', options).format(date);
+}
 
 client.on('ready', async () => {
+  console.clear();
+  console.log(`${client.user.tag} - rich presence started!`);
 
+  const r = new Discord.RichPresence(client)
+    .setApplicationId('1140502397928620184')
+    .setType('STREAMING')
+    .setURL('https://www.youtube.com/watch?v=BsaaQK94OPs') //Must be a youtube video link 
+    .setState('Playing Minecraft')
+    .setName('Dragon Slayer')
+    .setDetails(`DragonSlayer0SMP.aternos.me [${formatTime()}]`)
+    .setStartTimestamp(Date.now())
+ .setAssetsLargeImage('https://media.discordapp.net/attachments/1057148615405076491/1144509258868736071/lofi-girl-lofi.gif?width=451&height=402') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('Jenna_YT') //Text when you hover the Large image
+    .setAssetsSmallImage('https://media.discordapp.net/attachments/1126786252780339304/1140503094791254056/check.gif') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('Building a Bunker') //Text when you hover the Small image
+    .addButton('Join the SMP', 'https://discord.gg/RKhZpD9P2r')
+    .addButton('Subscribe to Owner', 'https://www.youtube.com/@Renzwtbenefits');
 
-    console.clear();
+  client.user.setActivity(r);
+  client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
 
-    console.log(`${client.user.tag} - rich presence started!`
-               )
-const r = new Discord.RichPresence()
-    .setApplicationId('Your Client ID')
-    .setType('STREAMING') //STREAMING, PLAYING, LISTENING.
-    .setURL('Your Twitch URL') // or your yt url
-    .setState('Your State')
-    .setName('mrnekrozyt')
-    .setDetails('Main Text')
-    .setStartTimestamp(Date.now()) // remove this if you dont want the timestamp (the time it started the rpc)
-    /*.setParty({         
-        max: 9999,
-        current: 6789,
-        id: Discord.getUUID(),
-    })*/
-    
-    //.setStartTimestamp(Date.now())
-    .setAssetsLargeImage('Static Image or Animated Image') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Your Large Text') //Text when you hover the Large image
-    .setAssetsSmallImage('Static Image or Animated Image') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Your Small Text') //Text when you hover the Small image
-    .addButton('Button Name', 'Your Button URL')
-    .addButton('Button Name', 'Your Button URL')
-     client.user.setActivity(r);
-     client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
-})
+  let prevTime = null;
+  setInterval(() => {
+    const newTime = formatTime();
+    if (newTime !== prevTime) {
+      const newDetails = `DragonSlayer0SMP.aternos.me [${newTime}]`;
+      r.setDetails(newDetails);
+      client.user.setActivity(r);
+      prevTime = newTime;
+    }
+  }, 1000); // Update every second
+});
 
-client.login(process.env.TOKEN)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Copyright to mrnekrozyt 2021-2023
-// Support Server:https://discord.gg/pSJ5JkmH6N
-// Source Code: https://github.com/mrnekrozyt/Streaming-24-7-RPC/
+const mySecret = process.env['TOKEN'];
+client.login(mySecret);
