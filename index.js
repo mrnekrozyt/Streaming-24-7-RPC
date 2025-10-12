@@ -27,15 +27,15 @@ client.on('ready', async () => {
     .setType('STREAMING')
     .setURL('https://youtu.be/rtaONidfhG4?si=msMXaAJFR1IO5lEX') //Must be a youtube video link 
     .setState('Those Eyes')
-    .setName('Dragon Slayer')
+    .setName('Is this really love?')
     .setDetails(`Captivates Me`)
     .setStartTimestamp(Date.now())
  .setAssetsLargeImage('https://media.discordapp.net/attachments/1057148615405076491/1144509258868736071/lofi-girl-lofi.gif?width=451&height=402') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Jenna_YT') //Text when you hover the Large image
+    .setAssetsLargeText('I have fallen for you') //Text when you hover the Large image
     .setAssetsSmallImage('https://media.discordapp.net/attachments/1126786252780339304/1140503094791254056/check.gif') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Building a Bunker') //Text when you hover the Small image
-    .addButton('Join the SMP', 'https://discord.gg/RKhZpD9P2r')
-    .addButton('Subscribe to Owner', 'https://www.youtube.com/@Renzwtbenefits');
+    .setAssetsSmallText('Im obsessed with you') //Text when you hover the Small image
+    .addButton('e-z.bio', 'https://e-z.bio/developer')
+    .addButton('Subscribe to The Goat', 'https://www.youtube.com/@Jenna_YTthegoat');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
