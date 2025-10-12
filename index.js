@@ -28,7 +28,7 @@ client.on('ready', async () => {
     .setURL('https://youtu.be/rtaONidfhG4?si=msMXaAJFR1IO5lEX') //Must be a youtube video link 
     .setState('Those Eyes')
     .setName('Is this really love?')
-    .setDetails(`Captivates Me`)
+    .setDetails(`Captivates Me [${formatTime()}]`)
     .setStartTimestamp(Date.now())
  .setAssetsLargeImage('https://media.discordapp.net/attachments/1057148615405076491/1144509258868736071/lofi-girl-lofi.gif?width=451&height=402') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('I have fallen for you') //Text when you hover the Large image
@@ -39,6 +39,17 @@ client.on('ready', async () => {
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
+
+  let prevTime = null;
+  setInterval(() => {
+    const newTime = formatTime();
+    if (newTime !== prevTime) {
+      const newDetails = `Captivates Me [${newTime}]`;
+      r.setDetails(newDetails);
+      client.user.setActivity(r);
+      prevTime = newTime;
+    }
+  }, 1000); // Update every second
 });
 
 const mySecret = process.env['TOKEN'];
