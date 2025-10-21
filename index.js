@@ -32,11 +32,11 @@ client.on("ready", async () => {
     .setDetails(`Captivates Me [${formatTime()}]`)
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage(
-      "https://media.discordapp.net/attachments/1427270181830524929/1427334085118001304/image0.png?ex=68ee7bf4&is=68ed2a74&hm=957a30b7dc4e508232f3cd482e12bd3190fb634d7ab7a21036a138715f8d8dc0&=&format=webp&quality=lossless&width=305&height=535",
+      "https://imgur.com/UYtctNC",
     ) //You can put links in tenor or discord and etc.
     .setAssetsLargeText("I have fallen for you") //Text when you hover the Large image
     .setAssetsSmallImage(
-      "https://media.discordapp.net/attachments/1427270181830524929/1427334085428117646/heart-beating-heart.png?ex=68ee7bf4&is=68ed2a74&hm=91adca9eefb0eebacdea0fba6db36677d25718a2e5f1193b31bde1cc511ae672&=&format=webp&quality=lossless",
+      "https://imgur.com/SBRWwsC",
     ) //You can put links in tenor or discord and etc.
     .setAssetsSmallText("Im obsessed with you") //Text when you hover the Small image
     .addButton("e-z.bio", "https://e-z.bio/developer")
