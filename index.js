@@ -65,7 +65,7 @@ client.on("ready", async () => {
     
     if (timeString !== prevTime) {
       const emoji = getEmoji(currentHour);
-      const newDetails = `${emoji} ${timeString} (GMT+7)`;
+      const newDetails = `${emoji} [${timeString}]`;
       
       r.setDetails(newDetails);
       client.user.setActivity(r);
