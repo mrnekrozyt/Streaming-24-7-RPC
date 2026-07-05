@@ -31,7 +31,7 @@ client.on("ready", async () => {
     .setName("Is this really love?")
     .setDetails(`Captivates Me [${formatTime()}]`)
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage("https://i.postimg.cc/wB3H3jDv/patjenna.gif") //You can put links in tenor or discord and etc.
+    .setAssetsLargeImage("https://media.discordapp.net/attachments/1258387249041772646/1523218289864474664/patjenna.gif?ex=6a4b4f14&is=6a49fd94&hm=5ad670aac3765ee422404079711a1d673db36243cf02eeaddc412dc1860c0761&=") //You can put links in tenor or discord and etc.
     .setAssetsLargeText("I have fallen for you") //Text when you hover the Large image
     .setAssetsSmallImage("small_pic") //You can put links in tenor or discord and etc.
     .setAssetsSmallText("Im obsessed with you") //Text when you hover the Small image
