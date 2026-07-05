@@ -44,16 +44,16 @@ client.on("ready", async () => {
     .setApplicationId("1426964594215227456")
     .setType("STREAMING")
     .setURL("https://www.youtube.com/watch?v=oHg5SJYRHA0") //Must be a youtube video link
-    .setState("Captivates Me")
-    .setName("Is this really love?")
+    .setState("​🇲​​🇾​ ​🇩​​🇪​​🇦​​🇷​,")
+    .setName("ᵢₛ ₜₕᵢₛ ᵣₑₐₗₗy ₗₒᵥₑ?")
     .setDetails(`${emoji} [${timeString}]`)
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage("https://cdn.discordapp.com/emojis/1523219969276641381.gif") //You can put links in tenor or discord and etc.
-    .setAssetsLargeText("I have fallen for you") //Text when you hover the Large image
+    .setAssetsLargeText("ɪ ʜᴀᴠᴇ ꜰᴀʟʟᴇɴ ꜰᴏʀ ʏᴏᴜ") //Text when you hover the Large image
     .setAssetsSmallImage("https://cdn.discordapp.com/emojis/1523219997051195432.png") //You can put links in tenor or discord and etc.
-    .setAssetsSmallText("Im obsessed with you") //Text when you hover the Small image
-    .addButton("‧₊˚.Portofolio ࿐壮", "https://e-z.bio/developer")
-    .addButton("‧₊˚.⊹xYoutube✧.*", "https://www.youtube.com/@jennabutub");
+    .setAssetsSmallText("ı'ɱ ơცʂɛʂʂɛɖ ῳıɬɧ ყơų") //Text when you hover the Small image
+    .addButton("‧₊˚.𝕻𝖔𝖗𝖙𝖔𝖋𝖔𝖑𝖎𝖔 ࿐壮", "https://e-z.bio/developer")
+    .addButton("‧₊˚.⊹x𝖄𝖔𝖚𝖙𝖚𝖇𝖊✧.*", "https://www.youtube.com/@jennabutub");
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
