@@ -32,18 +32,12 @@ client.on("ready", async () => {
     .setDetails(`Captivates Me [${formatTime()}]`)
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage(
-      "https://media.discordapp.net/attachments/1430232655802138734/1430232675104329779/image0.png?ex=68f9077a&is=68f7b5fa&hm=b7b4e4f909e06551333361f7f5f923e8e4ce3bf6d2efefa5e6a3d074459e5b49&=&format=webp&quality=lossless",
-    ) //You can put links in tenor or discord and etc.
+      "https://i.ibb.co/j9mcNW6r/5bfaa9ae-aa36-4dc0-b0f6-9fae421f4657-2.gif"), //You can put links in tenor or discord and etc.
     .setAssetsLargeText("I have fallen for you") //Text when you hover the Large image
-    .setAssetsSmallImage(
-      "https://media.discordapp.net/attachments/1430232655802138734/1430232703911071824/heart-beating-heart.png?ex=68f90781&is=68f7b601&hm=e0e6f7e840f4d80bcd0569dae8460785b0d2ba5095e4a177772c1531a50c87a9&=&format=webp&quality=lossless",
-    ) //You can put links in tenor or discord and etc.
+    .setAssetsSmallImage("https://i.ibb.co/rfxmjKkm/8122efd190c99309d907b7934d485d72.jpg"), //You can put links in tenor or discord and etc.
     .setAssetsSmallText("Im obsessed with you") //Text when you hover the Small image
-    .addButton("Portfolio", "https://e-z.bio/developer")
-    .addButton(
-      "Subscribe",
-      "https://www.youtube.com/@Jenna_YTthegoat",
-    );
+    .addButton("Portfolio", "https://e-z.bio/developer"),
+    .addButton("Subscribe", "https://www.youtube.com/@Jenna_YTthegoat");
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
