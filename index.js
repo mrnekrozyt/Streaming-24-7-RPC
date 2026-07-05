@@ -45,13 +45,13 @@ client.on("ready", async () => {
     .setType("STREAMING")
     .setURL("https://www.youtube.com/watch?v=oHg5SJYRHA0") //Must be a youtube video link
     .setState("​🇲🇾 🇩🇪🇦🇷")
-    .setName("Is this really love?")
+    .setName("𝕴𝖘 𝖙𝖍𝖎𝖘 𝖗𝖊𝖆𝖑𝖑𝖞 𝖑𝖔𝖛𝖊?")
     .setDetails(`${emoji} [${timeString}]`)
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage("https://cdn.discordapp.com/emojis/1523219969276641381.gif") //You can put links in tenor or discord and etc.
     .setAssetsLargeText("	🇮 🇭🇦🇻🇪 🇫🇦🇱🇱🇪🇳 🇫🇴🇷 🇾🇴🇺") //Text when you hover the Large image
     .setAssetsSmallImage("https://cdn.discordapp.com/emojis/1523219997051195432.png") //You can put links in tenor or discord and etc.
-    .setAssetsSmallText("I'm obsessed with you") //Text when you hover the Small image
+    .setAssetsSmallText("	ι'м σвѕєѕѕє∂ ωιтн уσυ") //Text when you hover the Small image
     .addButton("‧₊˚.Portofolio ࿐壮", "https://e-z.bio/developer")
     .addButton("‧₊˚.⊹xYoutube✧.*", "https://www.youtube.com/@jennabutub");
 
