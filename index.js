@@ -33,7 +33,7 @@ client.on("ready", async () => {
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage("https://cdn.discordapp.com/emojis/1523219969276641381.gif") //You can put links in tenor or discord and etc.
     .setAssetsLargeText("I have fallen for you") //Text when you hover the Large image
-    .setAssetsSmallImage("small_pic") //You can put links in tenor or discord and etc.
+    .setAssetsSmallImage("https://cdn.discordapp.com/emojis/1523219997051195432.png") //You can put links in tenor or discord and etc.
     .setAssetsSmallText("Im obsessed with you") //Text when you hover the Small image
     .addButton("Portfolio", "https://e-z.bio/developer")
     .addButton("Subscribe", "https://www.youtube.com/@Jenna_YTthegoat");
