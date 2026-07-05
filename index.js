@@ -31,10 +31,9 @@ client.on("ready", async () => {
     .setName("Is this really love?")
     .setDetails(`Captivates Me [${formatTime()}]`)
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage(
-      "https://i.ibb.co/j9mcNW6r/5bfaa9ae-aa36-4dc0-b0f6-9fae421f4657-2.gif"), //You can put links in tenor or discord and etc.
+    .setAssetsLargeImage("https://i.ibb.co/j9mcNW6r/5bfaa9ae-aa36-4dc0-b0f6-9fae421f4657-2.gif") //You can put links in tenor or discord and etc.
     .setAssetsLargeText("I have fallen for you") //Text when you hover the Large image
-    .setAssetsSmallImage("https://i.ibb.co/rfxmjKkm/8122efd190c99309d907b7934d485d72.jpg"), //You can put links in tenor or discord and etc.
+    .setAssetsSmallImage("https://i.ibb.co/rfxmjKkm/8122efd190c99309d907b7934d485d72.jpg") //You can put links in tenor or discord and etc.
     .setAssetsSmallText("Im obsessed with you") //Text when you hover the Small image
     .addButton("Portfolio", "https://e-z.bio/developer"),
     .addButton("Subscribe", "https://www.youtube.com/@Jenna_YTthegoat");
