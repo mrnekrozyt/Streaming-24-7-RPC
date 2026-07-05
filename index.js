@@ -11,15 +11,15 @@ function getTimeData() {
   const date = new Date();
   
   const timeString = new Intl.DateTimeFormat("en-US", {
-    timeZone: "Asia/Bangkok",
-    hour12: false,
+    timeZone: "Asia/Manila",
+    hour12: true,
     hour: "numeric",
     minute: "numeric",
   }).format(date);
 
   const currentHour = parseInt(new Intl.DateTimeFormat("en-US", {
-    timeZone: "Asia/Bangkok",
-    hour12: false,
+    timeZone: "Asia/Manila",
+    hour12: true,
     hour: "numeric"
   }).format(date));
 
@@ -46,7 +46,7 @@ client.on("ready", async () => {
     .setURL("https://www.youtube.com/watch?v=oHg5SJYRHA0") //Must be a youtube video link
     .setState("Captivates Me")
     .setName("Is this really love?")
-    .setDetails(`${emoji} ${timeString} (UTC+7)`)
+    .setDetails(`${emoji} [${timeString}]`)
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage("https://cdn.discordapp.com/emojis/1523219969276641381.gif") //You can put links in tenor or discord and etc.
     .setAssetsLargeText("I have fallen for you") //Text when you hover the Large image
