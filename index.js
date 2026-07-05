@@ -35,7 +35,7 @@ client.on("ready", async () => {
     .setAssetsLargeText("I have fallen for you") //Text when you hover the Large image
     .setAssetsSmallImage("https://i.ibb.co/rfxmjKkm/8122efd190c99309d907b7934d485d72.jpg") //You can put links in tenor or discord and etc.
     .setAssetsSmallText("Im obsessed with you") //Text when you hover the Small image
-    .addButton("Portfolio", "https://e-z.bio/developer"),
+    .addButton("Portfolio", "https://e-z.bio/developer")
     .addButton("Subscribe", "https://www.youtube.com/@Jenna_YTthegoat");
 
   client.user.setActivity(r);
