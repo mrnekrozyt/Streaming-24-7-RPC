@@ -36,7 +36,7 @@ client.on("ready", async () => {
     .setAssetsSmallImage("https://cdn.discordapp.com/emojis/1523219997051195432.png") //You can put links in tenor or discord and etc.
     .setAssetsSmallText("Im obsessed with you") //Text when you hover the Small image
     .addButton("Portfolio", "https://e-z.bio/developer")
-    .addButton("Subscribe", "https://www.youtube.com/@Jenna_YTthegoat");
+    .addButton("Subscribe", "https://www.youtube.com/@jennabutub");
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
