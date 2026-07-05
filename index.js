@@ -67,8 +67,8 @@ client.on("ready", async () => {
       const emoji = getEmoji(currentHour);
       const newDetails = `${emoji} ${timeString} (GMT+7)`;
       
-      rich.setDetails(newDetails);
-      client.user.setActivity(rich);
+      r.setDetails(newDetails);
+      client.user.setActivity(r);
       
       prevTime = timeString;
     }
