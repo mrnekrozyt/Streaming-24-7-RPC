@@ -7,21 +7,38 @@ const client = new Discord.Client({
 const keepAlive = require("./server.js");
 keepAlive();
 
-function formatTime() {
-  //Credits to himika#0001 and never#0001
+function getTimeData() {
   const date = new Date();
-  const options = {
-    timeZone: "America/New_York", //https://www.zeitverschiebung.net/en/ and find your city and enter here
-    hour12: true,
+  
+  const timeString = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Asia/Bangkok",
+    hour12: false,
     hour: "numeric",
     minute: "numeric",
-  };
-  return new Intl.DateTimeFormat("en-US", options).format(date);
+  }).format(date);
+
+  const currentHour = parseInt(new Intl.DateTimeFormat("en-US", {
+    timeZone: "Asia/Bangkok",
+    hour12: false,
+    hour: "numeric"
+  }).format(date));
+
+  return { timeString, currentHour };
+}
+
+function getEmoji(h) {
+    if (h >= 6 && h < 9) return '🌄';      
+    if (h >= 9 && h < 16) return '🌞';    
+    if (h >= 16 && h < 18) return '🌇';     
+    return '🌛';                            
 }
 
 client.on("ready", async () => {
   console.clear();
   console.log(`${client.user.tag} - rich presence started!`);
+
+  const { timeString, currentHour } = getTimeData();
+  const emoji = getEmoji(currentHour);
 
   const r = new Discord.RichPresence(client)
     .setApplicationId("1426964594215227456")
@@ -29,7 +46,7 @@ client.on("ready", async () => {
     .setURL("https://www.youtube.com/watch?v=oHg5SJYRHA0") //Must be a youtube video link
     .setState("Captivates Me")
     .setName("Is this really love?")
-    .setDetails(`Captivates Me [${formatTime()}]`)
+    .setDetails(`${emoji} ${timeString} (UTC+7)`)
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage("https://cdn.discordapp.com/emojis/1523219969276641381.gif") //You can put links in tenor or discord and etc.
     .setAssetsLargeText("I have fallen for you") //Text when you hover the Large image
@@ -42,15 +59,20 @@ client.on("ready", async () => {
   client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
 
   let prevTime = null;
+
   setInterval(() => {
-    const newTime = formatTime();
-    if (newTime !== prevTime) {
-      const newDetails = `Those Eyes [${newTime}]`;
-      r.setDetails(newDetails);
-      client.user.setActivity(r);
-      prevTime = newTime;
+    const { timeString, currentHour } = getTimeData();
+    
+    if (timeString !== prevTime) {
+      const emoji = getEmoji(currentHour);
+      const newDetails = `${emoji} ${timeString} (GMT+7)`;
+      
+      rich.setDetails(newDetails);
+      client.user.setActivity(rich);
+      
+      prevTime = timeString;
     }
-  }, 1000); // Update every second
+  }, 1000); 
 });
 
 const mySecret = process.env["TOKEN"];
