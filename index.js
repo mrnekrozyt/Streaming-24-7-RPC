@@ -52,8 +52,8 @@ client.on("ready", async () => {
     .setAssetsLargeText("	🇮 🇭🇦🇻🇪 🇫🇦🇱🇱🇪🇳 🇫🇴🇷 🇾🇴🇺") //Text when you hover the Large image
     .setAssetsSmallImage("https://cdn.discordapp.com/emojis/1523219997051195432.png") //You can put links in tenor or discord and etc.
     .setAssetsSmallText("	ι'м σвѕєѕѕє∂ ωιтн уσυ") //Text when you hover the Small image
-    .addButton("‧₊˚.Portofolio ࿐壮", "https://e-z.bio/developer")
-    .addButton("‧₊˚.⊹xYoutube✧.*", "https://www.youtube.com/@jennabutub");
+    .addButton("‧₊˚.	𝕻𝖗𝖔𝖋𝖎𝖑𝖊 ࿐壮", "https://e-z.bio/developer")
+    .addButton("‧₊˚.⊹x𝖄𝖔𝖚𝖙𝖚𝖇𝖊✧.*", "https://www.youtube.com/@jennabutub");
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
